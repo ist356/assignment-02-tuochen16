@@ -21,5 +21,6 @@ Examples:
 **Better Reflection** "I learned how to write while loops and their difference from for loops."   
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
-`--- Reflection Below This Line ---`
+Reflection：
+I don't really know how to write some functions and forget how to use some of them .
 
