@@ -26,13 +26,11 @@ def parse_packaging(packaging_data: str) -> list[dict]:
         item = item.split()[1].strip()
         package.append({item: quantity})
     
-    # the last one
+    # get the last one
     item = data.split(" in ")[-1]
     quantity = int(item.split()[0])
     item = item.split()[1].strip()
     package.append({item: quantity})
-
-    return package
 
 
 def calc_total_units(package: list[dict]) -> int:
@@ -47,6 +45,7 @@ def calc_total_units(package: list[dict]) -> int:
     input: [{ 'pieces' : 20}, {'packs' : 10}, {'carton' : 4}, {'box' : 1}]
     output: 800 (e.g. 20*10*4*1)
     '''
+
     total = 1
     for item in package:
         total *= list(item.values())[0]
@@ -66,16 +65,11 @@ def get_unit(package: list[dict]) -> str:
     output: pieces
 
     '''
-    return list(package[0].keys())[0]
-
-# This will only run from here, not when imported
-# # Use this for testing / debugging cases with the debugger
+    return list(package[0].keys())
 if __name__ == '__main__':
-    
+
     text = "25 balls in 1 bucket / 4 buckets in 1 bin"
     package = parse_packaging(text)
     print(package)
-
-    package_total = calc_total_units(package)
-    unit = get_unit(package)
-    print(f"{package_total} {unit} total")
+    print(calc_total_units(package))
+    print(get_unit(package)) 

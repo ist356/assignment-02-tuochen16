@@ -21,6 +21,5 @@ Examples:
 **Better Reflection** "I learned how to write while loops and their difference from for loops."   
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
-Reflection：
-I don't really know how to write some functions and forget how to use some of them .
-
+`--- Reflection Below This Line ---`
+I learned how to open and read files by reading the contents line by line, which allowed me to perform necessary string operations on each line, such as removing whitespace and parsing each part of the data. During this process, I utilized string splitting methods to extract quantities and units. Furthermore, by processing the parsed data, I learned how to apply mathematical logic to solve practical problems, such as calculating the total units of a product.
