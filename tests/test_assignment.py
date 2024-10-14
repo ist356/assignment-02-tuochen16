@@ -6,8 +6,14 @@ def test_should_pass():
     print("This will always pass!")
     assert True
 
-def test_parse_packaging():    
-    # tests the package parser
+"""
+This function, `test_parse_packaging`, is a unit test for the `parse_packaging` function. It verifies that the `parse_packaging` function correctly parses strings describing quantities of items within containers. The test cases include various scenarios with nested containers, ensuring the function can handle complex input formats. Each test case compares the expected parsed output with the actual output from the `parse_packaging` function.
+"""
+"""
+This function, `test_parse_packaging`, is a unit test for the `parse_packaging` function. It verifies that the `parse_packaging` function correctly interprets and parses strings describing the packaging of items into various containers. The test cases include different combinations of nested containers and their quantities, ensuring the parser can handle complex packaging hierarchies.
+"""
+def test_parse_packaging():  
+      # tests the package parser
     tests = [
         ("12 eggs in 1 carton", [{ 'eggs' : 12}, {'carton' : 1}]),
         ("6 bars in 1 pack / 12 packs in 1 carton", [{ 'bars' : 6}, {'packs' : 12}, {'carton' : 1}]),
